@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito&family=Raleway:wght@200;300;400&family=Source+Code+Pro:wght@300&display=swap');
+
+body{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    min-height: 100vh;
+    display:flex;
+    background: rgb(20,19,23);
+    background: linear-gradient(170deg, rgba(20,19,23,1) 31%, rgba(75,4,74,1) 56%, rgba(128,17,44,1) 88%);
+   background-size: 400% 400%;
+    color: white;
+    animation: change 12s ease-in-out alternate infinite;
+  
+}
+.mainContainer{
+ 
+    color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+        justify-content: center;
+}
+.blob{
+    
+position: absolute;
+
+width: 800px;
+height: 800px;
+z-index: -5;
+align-items: center;
+justify-content: center;
+display: flex;
+
+}
+.navBar{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    top:-10px;
+}
+a{
+    text-decoration: none;
+}
+@keyframes change{
+    0%{background-position: 0 50%;}
+    50%{background-position: 50% 100%;}
+    100%{ background-position: 50% 0%;}
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+   border-radius: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #585252; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(241, 221, 221); 
+  }

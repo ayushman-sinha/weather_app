@@ -1,0 +1,33 @@
+.moreBox{
+    top:-50px;
+    width: 600px;
+    height: 200px;
+    backdrop-filter: blur(25px);
+    background-color: rgba(134, 126, 126, 0.178);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+   margin-bottom: 40px;
+   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+   overflow: hidden;
+   z-index: 37;
+}
+.blob1{
+    
+    position: relative;
+  
+    width: 300px;
+    height: 300px;
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    }
+    .blob1 img{
+        z-index: -195;
+        
+    position: relative;
+    }

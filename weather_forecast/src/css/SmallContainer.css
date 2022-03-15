@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito&family=Raleway:wght@200;300;400&family=Source+Code+Pro:wght@300&display=swap');
+
+.eachBox{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+     left: 10px;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    flex:none;
+    width: 120px;
+    overflow: hidden;
+    height: 140px;
+    background: rgb(99,38,141);
+background: linear-gradient(170deg, rgb(65, 1, 78) 0%, rgba(110,45,52,1) 51%, rgba(13,8,0,1) 100%);
+animation: change1 5s ease-in-out alternate-reverse infinite;
+border-radius: 12px;
+background-size: 400% 400%;
+box-shadow: 1px 1px 10px 1px black;
+}
+@keyframes change1{
+    0%{background-position: 0 50%;}
+    50%{background-position: 50% 100%;}
+    100%{ background-position: 50% 0%;}
+}
+.imgCont{
+    position: absolute;
+    z-index: 39;
+   width: 200px;
+   height: 200px;
+    opacity: 0.6;
+    display: flex;
+    top:-50px;
+   
+}
+.timeTop{
+    display: flex;
+    font-size: 25px;
+    font-weight: 300;
+    color: bisque;
+    font-family: 'Fredoka', sans-serif;
+    top:20px;
+    position: relative;
+   
+    z-index:299;
+}
+.tempBottom{
+    display: flex;
+    font-size: 22px;
+    font-weight: 200;
+    color: white;
+    font-family: 'Fredoka', sans-serif;    
+    position: relative;    
+    z-index:299;
+   top:-20px;
+}
+.iconMid{
+    
+    display: flex;
+    left: -20px;
+    z-index: 301;
+    /* background-color: aliceblue; */
+}
+.transBox{
+   visibility: hidden;
+   width: 1px;
+}

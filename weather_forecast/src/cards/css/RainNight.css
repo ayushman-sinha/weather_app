@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Nunito&family=Raleway:wght@200;300;400&family=Roboto+Condensed:wght@300&display=swap');
+.container3{
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    margin: 100px auto;
+    height: 140px;
+    width: 360px;
+    background-color: #041799;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+    padding: 5px;
+}
+
+.containerWaves{
+   z-index: 100;
+   position: absolute;
+   top:-160px;
+   right: -20px;
+   /* transform: rotate(30deg); */
+}
+.cloudSize{
+    width: 600px;
+   height: 600px;
+   opacity: 0.8;
+   filter: contrast(200%),brightness(40%);
+}
+.time1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 4.2rem;
+    text-shadow: 1px 1px 1px black;
+    margin-left:200px;
+    position: relative;
+    z-index: 180;
+}
+.leftContainer{
+    position: relative;
+    z-index: 200;
+}
+.sky{
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.temp{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-shadow: 0.5px 1px black;
+    font-size: 3.5rem;
+    font-weight: 400;   
+    margin-top: 0px; 
+    margin-left: 40px;
+
+}
+.cloudBack{
+    position: absolute;
+    z-index: 150;
+    right: 100px;
+    top:10px;
+    opacity: 0.2;
+    animation: cloudAnim 5s infinite ease-in-out alternate;
+}
+@keyframes cloudAnim{
+    0%{opacity: 0.1;right:0px}
+    20%{opacity: 0.2;}
+    40%{opacity: 0.23;}
+    60%{opacity: 0.26;}
+    80%{opacity: 0.28;}
+    100%{opacity: 0.32;}
+}
