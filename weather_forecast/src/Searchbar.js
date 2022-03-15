@@ -23,7 +23,7 @@ const Searchbar = () => {
     const DisplayMore=(e)=>{
       setDetails(!details);
       if(details==true){
-        setDetailContent(<Component3></Component3>)
+        setDetailContent(<Component3></Component3>);
       }
       else
       setDetailContent(<></>)
